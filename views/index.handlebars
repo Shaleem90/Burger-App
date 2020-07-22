@@ -1,0 +1,59 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="title">Eat Da' Burger</h1>
+      <form class="create-form addBurger">
+        <div class="form-group">
+          <input type="text" id="bu" name="name" placeholder="Enter Burger Name"><button class="button"
+            type="submit">Add the Burger!</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="/assets/img/burger.png" alt="burger image" id="burgerPNG">
+    </div>
+  </div>
+
+  <div class="row row2">
+
+    <div class="col-sm-6">
+      <div class="card">
+        <h3 class="card-header">Burgers Ready</h3>
+
+        <div class="card-body">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li class = "burgNames">
+              {{burger_name}}
+              <button type="button" class="change-devoured" data-id={{this.id}}>DEVOUR</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <h3 class="card-header">Devoured Burgers</h3>
+        <div class="card-body">
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li class="burgerDevoured">{{burger_name}}</li>
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<!-- image attribution -->
+<a class="footer" href="https://www.freepnglogos.com/images/burger-10956.html">burger png png images yellow images
+  from freepnglogos.com</a>
