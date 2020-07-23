@@ -54,7 +54,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+    
     update: (table, objColVals, condition, cb) => {
       const queryString = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`;
 

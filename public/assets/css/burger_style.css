@@ -1,0 +1,50 @@
+#burgerimg {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+.title {
+    padding-top: 10%;
+    font-size: 3em;
+    margin-left: 5%;
+    color: white;
+}
+.addBurger {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+}
+.button {
+    margin-left: 2%;
+}
+.row2 {
+    border-top: solid;
+    padding-top: 5%;
+}
+
+.burgNames {
+    font-size: 1.2em;
+    padding-bottom: 2%;
+}
+ul {
+    list-style-type: none;
+}
+.change-devoured {
+    background-color: rgb(0, 145, 255);
+    font-size: 12px;
+    position: absolute;
+    margin-left: 15%;
+    color: white;
+}
+
+.burgerDevoured {
+    font-size: 1.2em;
+    color:rgb(0, 153, 255);
+}
+
+.container {
+    background-color: black;
+}
