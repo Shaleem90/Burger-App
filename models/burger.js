@@ -7,7 +7,7 @@ const burger = {
         cb(res);
     });
   },
-  // The variables cols and vals are arrays.
+
   create: (cols, vals, cb) => {
     orm.create("burgers", cols, vals, res => {
       cb(res);
@@ -20,5 +20,5 @@ const burger = {
   },
 
 }
-// Export the database functions for the controller burger_controller.js).
+// Export burger_controller.js).
 module.exports = burger;
